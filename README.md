@@ -15,7 +15,7 @@ Default are added 2:
 * PHP consts - NULL, TRUE, FALSE
 * Configuration consts - defined at config file
 
-Purpose of this is that usually i use in system non meaning const data, like default system admin.
+Purpose of this is that usually i use in system non meaning const data, like default system admin. Addictionally extend placoholder from others extension.
 Over testing on local machine is okey, but when need run over some dump, user probably will change and i don't need to change scenarios.
 
 ## Installing extension
@@ -32,7 +32,9 @@ or composer.json
     "require": {
         "timitao/behatplaceholderextension": "1.0.*"
     },
+## Extending 
 
+If you need owc placeholder, only need to add this due extension using tag ``placeholder.object_mapper.register`` and implement [interface](https://github.com/timiTao/BehatPlaceholderExtension/blob/master/src/Behat/PlaceholderExtension/Mapper/ObjectMapperInterface.php#L12). Look for consts [example](https://github.com/timiTao/BehatPlaceholderExtension/blob/master/src/Behat/PlaceholderExtension/Mappers/ConstObjectMapper.php#L14)
 
 ## Example
 
