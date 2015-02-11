@@ -1,0 +1,15 @@
+default:
+  autoload:
+      '': %paths.base%/src/
+  suites:
+    default:
+      path: %paths.base%/features
+      contexts:
+        - Behat\PlaceholderExtension\Context\FeatureContext
+  extensions:
+    Behat\PlaceholderExtension\ServiceContainer\Extension:
+        pattern: /placeholder\(([a-zA-Z0-9_\.\-]+)\)/
+        defaults:
+          key1: value1
+          key2: value2
+

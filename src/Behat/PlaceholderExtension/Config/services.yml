@@ -1,0 +1,37 @@
+parameters:
+  placeholder.mapper.class: Behat\PlaceholderExtension\Mapper\Mapper
+  placeholder.mapper.collection.class: Behat\PlaceholderExtension\Collection\Collection
+  placeholder.tranformer.class: Behat\PlaceholderExtension\Transformer\PlaceholderArgumentTransformer
+  placeholder.mapper.default.class: Behat\PlaceholderExtension\Mappers\DefaultObjectMapper
+  placeholder.mapper.const.class: Behat\PlaceholderExtension\Mappers\ConstObjectMapper
+
+services:
+  placeholder.mapper:
+    class:  "%placeholder.mapper.class%"
+    arguments:
+      - "@placeholder.mapper.collection"
+
+  placeholder.mapper.collection:
+    class: "%placeholder.mapper.collection.class%"
+
+  placeholder.tranformer:
+    class: "%placeholder.tranformer.class%"
+    arguments:
+      - "@placeholder.mapper"
+      - "%placeholder.config.pattern%"
+    tags:
+      -  { name: transformation.argument_transformer, priority: 101 }
+
+  placeholder.mapper.default:
+    class: "%placeholder.mapper.default.class%"
+    arguments:
+      - "%placeholder.config.defaults%"
+    tags:
+      -  { name: placeholder.object_mapper.register}
+
+  placeholder.mapper.const:
+    class: "%placeholder.mapper.const.class%"
+    tags:
+      -  { name: placeholder.object_mapper.register}
+
+
