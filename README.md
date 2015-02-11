@@ -1,3 +1,12 @@
+[![License](https://poser.pugx.org/timitao/behatplaceholderextension/license.svg)](https://packagist.org/packages/timitao/behatplaceholderextension)
+[![Latest Stable Version](https://poser.pugx.org/timitao/behatplaceholderextension/v/stable.svg)](https://packagist.org/packages/timitao/behatplaceholderextension)
+[![Latest Unstable Version](https://poser.pugx.org/timitao/behatplaceholderextension/v/unstable.svg)](https://packagist.org/packages/timitao/behatplaceholderextension)
+[![Total Downloads](https://poser.pugx.org/timitao/behatplaceholderextension/downloads.svg)](https://packagist.org/packages/timitao/behatplaceholderextension)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/d6c70d12-ccdb-4c13-a4d6-bbe6113d5601/mini.png)](https://insight.sensiolabs.com/projects/d6c70d12-ccdb-4c13-a4d6-bbe6113d5601)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/timitao/behatplaceholderextension/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/timitao/behatplaceholderextension/?branch=master)
+
+
+
 BehatPlaceholderExtension
 ================
 
